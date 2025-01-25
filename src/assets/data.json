@@ -1,0 +1,37 @@
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "usertype": "admin",
+    "joined_date": "2024-05-15",
+    "status": "accepted"
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "usertype": "user",
+    "joined_date": "2025-01-20",
+    "status": "pending"
+  },
+  {
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "usertype": "moderator",
+    "joined_date": "2023-11-01",
+    "status": "accepted"
+  },
+  {
+    "name": "Bob Brown",
+    "email": "bob.brown@example.com",
+    "usertype": "user",
+    "joined_date": "2025-01-10",
+    "status": "accepted"
+  },
+  {
+    "name": "Charlie Davis",
+    "email": "charlie.davis@example.com",
+    "usertype": "guest",
+    "joined_date": "2025-01-15",
+    "status": "pending"
+  }
+]
