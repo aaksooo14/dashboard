@@ -1,188 +1,92 @@
-import React, { useState } from 'react'
 import Header from './component/Header'
-import { FaHome } from "react-icons/fa";
-import { FaElementor } from "react-icons/fa";
-import { FaWpforms } from "react-icons/fa";
-import { CiCalendarDate } from "react-icons/ci";
-import { RiContactsLine } from "react-icons/ri";
-import { RiPagesLine } from "react-icons/ri";
-import { SiNextra } from "react-icons/si";
-import { LuComponent } from "react-icons/lu";
+
 import DashBoard from './component/DashBoard';
-import Components from './component/Components';
-import UiComponent from './component/UiComponent';
-import profileImage from './assets/image1.jpg'
-import FormStuffs from './component/FormStuffs';
-import DateTable from './component/DateTable';
-import Icon from './component/Icon';
-import Sample from './component/Sample';
-import Extra from './component/Extra';
-import Form from './component/Form'
+import { MdDashboard } from "react-icons/md";
+import { CiBoxList } from "react-icons/ci";
+import { MdMarkEmailUnread } from "react-icons/md";
+import { CgProfile } from "react-icons/cg";
+import { MdNotificationsActive } from "react-icons/md";
+import { LiaFileContractSolid } from "react-icons/lia";
+import { IoSettings } from "react-icons/io5";
+import { CiSearch } from "react-icons/ci";
+import { IoIosLogOut } from "react-icons/io";
+
 
 
 
 const App = () => {
 
-  const [dashboard, setDashboard] = useState(true)
-  const [uiElement, setuiElement] = useState(false)
-  const [component, setcomponent] = useState(false)
-  const [formStuff, setFormStuff] = useState(false)
-  const [dateTable, setDateTable] = useState(false)
-  const [icons, setIcons] = useState(false)
-  const [samplePage, setSamplePage] = useState(false)
-  const [extra, setExtra] = useState(false)
-  const [addProject, setAddProject] = useState(false)
-
-
   return (
     <>
       <Header />
-      <div className='flex  p-5 text-xl '>
-        <div className='w-[20vw] h-[100vh] p-5'>
-          <ul className='space-y-4'>
-            <div className='flex space-x-5'>
-              <img src={profileImage} alt='imgProfile ' className='h-10 rounded-full' />
-              <li>Akash </li>
+
+      <div className='flex  p-5  bg-slate-400 space-x-5'>
+        {/* Left Part */}
+        <div className='w-[20vw] max-h-screen flex justify-center bg-white rounded-lg'>
+          <ul className='space-y-4     pt-[10vh]'>
+
+            <div className='flex space-x-3 p-2 hover:text-blue-700 hover:bg-blue-300' >
+              <div className='pt-1'> <MdDashboard /></div>
+              <p>Dashboard</p>
 
             </div>
-            <div className='flex justify-between hover:text-blue-400'>
-              <li onClick={() => {
-                setDashboard(true)
-                setuiElement(false)
-                setDateTable(false)
-                setExtra(false)
-                setFormStuff(false)
-                setIcons(false)
-                setExtra(false)
-                setcomponent(false)
-                setSamplePage(false)
-              }}>Dashboard</li>
-              <FaHome />
-            </div>
-            <div className='flex justify-between  hover:text-blue-400'>
-              <li onClick={() => {
-                setDashboard(false)
-                setuiElement(true)
-                setDateTable(false)
-                setExtra(false)
-                setFormStuff(false)
-                setIcons(false)
-                setExtra(false)
-                setcomponent(false)
-                setSamplePage(false)
-              }}>UI Elements</li>
-              <FaElementor />
-            </div>
-            <div className='flex justify-between  hover:text-blue-400'>
-              <li onClick={() => {
-                setDashboard(false)
-                setuiElement(false)
-                setDateTable(false)
-                setExtra(false)
-                setFormStuff(false)
-                setIcons(false)
-                setExtra(false)
-                setcomponent(true)
-                setSamplePage(false)
-              }}>Graph</li>
-              <LuComponent />
-            </div>
-            <div className='flex justify-between  hover:text-blue-400'>
-              <li onClick={() => {
-                setDashboard(false)
-                setuiElement(false)
-                setDateTable(false)
-                setExtra(false)
-                setFormStuff(true)
-                setIcons(false)
-                setExtra(false)
-                setcomponent(false)
-                setSamplePage(false)
-              }}>Form Stuffs</li>
-              <FaWpforms />
-            </div>
-            <div className='flex justify-between  hover:text-blue-400'>
-              <li onClick={() => {
-                setDashboard(false)
-                setuiElement(false)
-                setDateTable(true)
-                setExtra(false)
-                setFormStuff(false)
-                setIcons(false)
-                setExtra(false)
-                setcomponent(false)
-                setSamplePage(false)
-              }}>Date Table</li>
-              <CiCalendarDate />
-            </div>
-            <div className='flex justify-between  hover:text-blue-400'>
-              <li onClick={() => {
-                setDashboard(false)
-                setuiElement(false)
-                setDateTable(false)
-                setExtra(false)
-                setFormStuff(false)
-                setIcons(true)
-                setExtra(false)
-                setcomponent(false)
-                setSamplePage(false)
-              }}>Icons</li>
-              <RiContactsLine />
-            </div>
-            <div className='flex justify-between  hover:text-blue-400'>
-              <li onClick={() => {
-                setDashboard(false)
-                setuiElement(false)
-                setDateTable(false)
-                setExtra(false)
-                setFormStuff(false)
-                setIcons(false)
-                setExtra(false)
-                setcomponent(false)
-                setSamplePage(true)
-              }}>Sample Page</li>
-              <RiPagesLine />
-            </div>
-            <div className='flex justify-between  hover:text-blue-400'>
-              <li onClick={() => {
-                setDashboard(false)
-                setuiElement(false)
-                setDateTable(false)
-                setExtra(true)
-                setFormStuff(false)
-                setIcons(false)
-                setExtra(false)
-                setcomponent(false)
-                setSamplePage(false)
+            <div className='flex space-x-2  p-2 hover:text-blue-700 hover:bg-blue-300'>
+              <div className='pt-1'><CiBoxList /></div>
+              <p>Job Listings</p>
 
-              }}>Extras</li>
-              <SiNextra />
             </div>
-            <button
-              onClick={() => setAddProject(!addProject)}
-              className='bg-blue-400 text-white text-[15px] p-2 rounded-md w-[12vw]'>Add Project</button>
-            {addProject &&
-              <div className='absolute top-5 left-[33vw]'>
-                <Form />
+
+            <div className='flex space-x-2 p-2 hover:text-blue-700 hover:bg-blue-300'>
+              <div className='pt-1'><MdMarkEmailUnread /></div>
+              <p >Interview Management</p>
+            </div>
+            <div className='flex space-x-2 p-2 hover:text-blue-700 hover:bg-blue-300'>
+              <div className='pt-1'><CgProfile /></div>
+              <p >Employee</p>
+
+            </div>
+            <div className='flex space-x-2   p-2 hover:text-blue-700 hover:bg-blue-300'>
+              <div className='pt-1'><MdNotificationsActive /></div>
+              <p>Notifications</p>
+
+            </div>
+            <div className='flex space-x-2 p-2 hover:text-blue-700 hover:bg-blue-300'>
+              <div className='pt-1'><LiaFileContractSolid /></div>
+              <p >Contracts</p>
+
+            </div>
+            <div className='flex  space-x-2 p-2 hover:text-blue-700 hover:bg-blue-300'>
+              <div className='pt-1'><IoSettings /></div>
+              <p >System Setting</p>
+
+            </div>
+            <div className='pt-[10vh] flex  justify-center '>
+              <div className='bg-blue-200 p-5 space-x-2 flex rounded-xl'>
+                <div className=' text-2xl text-blue-700'>
+                  <IoIosLogOut />
+                </div>
+
+                <button className='font-bold text-blue-600'>Log Out</button>
               </div>
-            }
+
+            </div>
           </ul>
 
-        </div>
+        </div >
+        {/* Right Part */}
+        <div className='space-y-[10vh]' >
+          <div className='flex absolute right-5 bg-white p-1 '>
+            <div className='bg-white pt-2 p-2'><CiSearch /></div>
+            <input type='Search' className=' border-l-blue-600 border-l-2 pl-2 ' placeholder='Search' />
+          </div>
+          <div className='bg-white rounded-xl h-[75vh] w-[80vw]'>
+            <DashBoard />
+          </div>
 
-        <div className='bg-slate-200 w-[100vw] p-5'>
-          {dashboard && <DashBoard />}
-          {uiElement && <UiComponent />}
-          {component && <Components />}
-          {formStuff && <FormStuffs />}
-          {dateTable && <DateTable />}
-          {icons && <Icon />}
-          {samplePage && <Sample />}
-          {extra && <Extra />}
+        </div >
 
 
-        </div>
-      </div>
+      </div >
     </>
   )
 }

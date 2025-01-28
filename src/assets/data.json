@@ -1,37 +1,66 @@
 [
   {
-    "name": "John Doe",
-    "email": "john.doe@example.com",
-    "usertype": "admin",
-    "joined_date": "2024-05-15",
-    "status": "accepted"
+    "name": "UX designer",
+    "company": "Scale Nexus",
+    "project": "Dashboard Design",
+    "starting_date": "10-01-2025",
+    "end_date": "22-01-2025",
+    "status": "completed"
   },
   {
-    "name": "Jane Smith",
-    "email": "jane.smith@example.com",
-    "usertype": "user",
-    "joined_date": "2025-01-20",
-    "status": "pending"
+    "name": "FullStack developer",
+    "company": "Durapid technologies",
+    "project": "Dashboard Design",
+    "starting_date": "10-01-2025",
+    "end_date": "22-01-2025",
+    "status": "completed"
   },
   {
-    "name": "Alice Johnson",
-    "email": "alice.johnson@example.com",
-    "usertype": "moderator",
-    "joined_date": "2023-11-01",
-    "status": "accepted"
+    "name": "Backend Engineer",
+    "company": "Gosotek technologies",
+    "project": "App developement",
+     "starting_date": "10-01-2025",
+    "end_date": "22-01-2025",
+    "status": "completed"
   },
   {
-    "name": "Bob Brown",
-    "email": "bob.brown@example.com",
-    "usertype": "user",
-    "joined_date": "2025-01-10",
-    "status": "accepted"
+    "name": "React Native",
+    "company": "Rockster games",
+    "project": "unreal game engine",
+    "starting_date": "10-01-2025",
+    "end_date": "22-01-2025",
+    "status": "completed"
   },
   {
-    "name": "Charlie Davis",
-    "email": "charlie.davis@example.com",
-    "usertype": "guest",
-    "joined_date": "2025-01-15",
-    "status": "pending"
+    "name": "Flutter developer",
+    "company": "TATA Consultancy",
+    "project": "Portal design",
+    "starting_date": "2025-01-15",
+    "end_date": "2025-01-15",
+    "status": "completed"
+  },
+  {
+    "name": "Frontend developer",
+    "company": "Durapaid technologies",
+    "project": "Dashboard Design",
+    "starting_date": "2025-01-15",
+    "end_date": "2025-01-15",
+    "status": "completed"
+  },
+  {
+    "name": "react JS developer",
+    "company": "Gosotek Technologies",
+    "project": "Dashboard design",
+    "starting_date": "2025-01-15",
+    "end_date": "-",
+    "status": "in progress"
+  },
+  {
+    "name": "UI/UX developer",
+    "company": "Rockster games",
+    "project": "App development",
+    "starting_date": "2025-01-15",
+    "end_date": "-",
+    "status": "in progress "
   }
 ]

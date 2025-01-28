@@ -1,27 +1,35 @@
-import React from 'react'
-import { FaRocketchat } from "react-icons/fa";
-import { IoIosNotifications } from "react-icons/io";
-import profImage from './../assets/image1.jpg'
-
+import { CiSearch } from "react-icons/ci";
+import { MdErrorOutline } from "react-icons/md";
+import { CgProfile } from "react-icons/cg";
+import { IoSettings } from "react-icons/io5";
 const Header = () => {
     return (
         <>
-            <div className='flex justify-between h-[10vh] p-5'>
-                <div className='w-[15vw] flex justify-center'>
-                    <h1 className='text-2xl text-blue-500 font-bold'>Bluebox</h1>
+            <div className="flex justify-between p-5 ">
+                <div>
+                    <ul className="flex space-x-4">
+                        <li className="font-bold text-2xl">LOGO</li>
+                        <li className="pt-1 font-serif">Company Name</li>
+                    </ul>
                 </div>
-                <div className='flex justify-between space-x-3 '>
-                    <input type='search' className='w-[70vw] rounded-md border-2 pl-3' placeholder='search here' />
-                    <div className='flex space-x-2 '>
-                        <img src={profImage} className='rounded-full w-10' alt='profileImage' />
-                        <span>Akash</span>
+                <div className="border-l-2 border-r-2 border-b-2 pl-2 space-x-2 flex">
+                    <div className="pt-2    ">
+                        <CiSearch />
                     </div>
-                    <div className='text-xl'>
-                        <FaRocketchat />
-                    </div>
-                    <div className='text-xl'>
-                        <IoIosNotifications />
-                    </div>
+                    <input className=" w-[40vw] " type="search" placeholder="Search" />
+                </div>
+                <div>
+                    <ul className="flex space-x-4">
+                        <li className="text-2xl pt-1">
+                            <MdErrorOutline />
+                        </li>
+                        <li className="text-2xl pt-1">
+                            <IoSettings />
+                        </li>
+                        <li className="text-3xl text-blue-600">
+                            <CgProfile />
+                        </li>
+                    </ul>
                 </div>
             </div>
         </>
